@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<title>mail</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<link rel="stylesheet" type="text/css" href="css/mailform.css" />
+
+<!-- ご希望の日時選択ライブラリここから -->
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+<!-- ご希望の日時選択ライブラリここまで -->
+
+</head>
+<body>
+
+	<form action="php/mailform.php" method="post" id="mail_form">
+		<dl>
+			<dt>名前<span>Your Name</span></dt>
+			<dd class="required"><input type="text" id="name_1" name="name_1" value="" /> <input type="text" id="name_2" name="name_2" value="" /></dd>
+			
+			<dt>ふりがな<span>Name Reading</span></dt>
+			<dd><input type="text" id="read_1" name="read_1" value="" /> <input type="text" id="read_2" name="read_2" value="" /></dd>
+            
+            <dt>会社名<span>Company Name</span></dt>
+			<dd class="required"><input type="text" id="company" name="company" value="" /> </dd>
+			
+			<dt>メールアドレス<span>Mail Address</span></dt>
+			<dd class="required"><input type="text" id="mail_address" name="mail_address" value="" /></dd>
+			
+			<dt>メールアドレス(確認)<span>Mail Address Confirm</span></dt>
+			<dd class="required"><input type="text" id="mail_address_confirm" name="mail_address_confirm" value="" /></dd>
+			
+			<dt>電話番号<span>Phone Number</span></dt>
+			<dd class="required"><input type="text" id="phone" name="phone" value="" /></dd>
+			
+			
+			<dt>お問い合わせの内容<span>Mail Contents</span></dt>
+			<dd class="required"><textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea></dd>
+			
+			<dt>送信する<span>Send</span></dt>
+			<dd class="required"><input type="submit" id="mail_submit_button" name="mail_submit_button" value="送信する" /></dd>
+		</dl>
+	</form>
+
+
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/mailform.js"></script>
+
+
+<!-- フリガナ自動入力ライブラリここから -->
+<script type="text/javascript" src="js/jquery.autoKana.js"></script>
+<!-- フリガナ自動入力ライブラリここまで -->
+
+
+<!-- 住所自動入力ライブラリここから -->
+<script type="text/javascript" src="js/ajaxzip3.js"></script>
+<!-- 住所自動入力ライブラリここまで -->
+
+
+<!-- ご希望の日時選択ライブラリここから -->
+<script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
+<script>
+	$(function(){
+		$('#day').datetimepicker({
+			//サンプルとして選択可能時間帯を10:00～18:00にしています。
+			minTime : '10:00',
+			maxTime : '19:00'
+		});
+	});
+</script>
+<!-- ご希望の日時選択ライブラリここまで -->
+
+
+</body>
+</html>
