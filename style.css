@@ -43,7 +43,9 @@ body{
 
 .site-title {
 	float:left;
-	width:50%;
+	width:40%;
+	margin-left: 4%;
+	margin-top: 5%;
 }
 
 .site-title p {
@@ -62,22 +64,25 @@ body{
 	width:100%;
 }
 .contact-btn{
-  display: inline-block;
-  width: 70%;
-  margin: 5%;
-  padding: 3% 3%;
-  border: 1px solid #fff;
-  background: transparent;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  transition: .3s;
-	font-size: 2rem;
+	display: inline-block;
+	width: 70%;
+	margin: 5%;
+	padding: 2% 3%;
+	border: 2px solid #fff;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1;
+	transition: .3s;
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
 }
 .contact-btn:hover {
-  background: #fff;
-  color: #555;
+	background: #fff;
+	color: #555;
+	text-shadow: 1px 1px 1px #fff;
 }
 /*
 .contact {
@@ -535,16 +540,13 @@ body{
 .contact-btn-3 i{
 	margin-left: 10px;
 }
-
-/* 豆知識 */
 .trivia {
-	width:100%;
 	background-color: #FDF2DD;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
-.trivia-wrapper {
+.trivia-wrapper_01 {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #fff;
@@ -553,14 +555,13 @@ body{
 }
 
 .trivia-box {
-	display: table;
+	overflow: hidden;
 }
 
 .trivia-title  {
 	background-color: #3498db;
 	float: left;
-	height: 250px;
-	width: 250px;
+	width: 25%;
 	border-radius: 10px;
 	text-align:center;
 	border: 5px dotted #fff;
@@ -578,7 +579,7 @@ body{
 
 .trivia-title p{
 	color: #fff;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	line-height: 3.5rem;
 	margin-top:15px;
 	text-shadow: 0 1px 0 #969696,
@@ -591,7 +592,12 @@ body{
 .trivia-img {
 	float: right;
 	display:table-cell;
-	margin-left: 20px;
+	width:70%;
+}
+
+.trivia-img img{
+	padding-top: 3%;
+	width:100%;
 }
 
 .trivia-discription p{
