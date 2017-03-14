@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
+@media screen and (min-width:768px){
 
+#wrapper{
+	width:100%;
+}
 html{
 	font-size: 62.5%;
 	margin: 0 auto;
@@ -16,32 +20,34 @@ body{
 	font-size: 1.4rem;
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+.block_01{
+	overflow: hidden;
+	width:100%;
+}
 
 /*ヘッダー部分*/
 .site-title-sub {
-	background-color: #95a5a6;
-	max-width: 100%;
+	float: right;
+	width: 45%;
+	margin:2% 1%;
+
 }
 
 .site-title-sub p {
-	width: 100%;
-	color: #fff;
+	width:90%;
 	height:auto;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: bold;
-	padding: 10px;
-	margin: 0 auto;
 	position: relative; /* Fix for absolute positioning */
 }
 
 .site-title {
-	width: 1000px;
-	margin: 0 auto;
+	float:left;
+	width:50%;
 }
 
 .site-title p {
-	width: 40%;
-	float: left
+	width: 100%;
 }
 
 .site-title p img {
@@ -49,6 +55,31 @@ body{
 	height: auto;
 }
 
+.contact{
+	position: absolute;
+	top:64%;
+	text-align: center;
+	width:100%;
+}
+.contact-btn{
+  display: inline-block;
+  width: 70%;
+  margin: 5%;
+  padding: 3% 3%;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  transition: .3s;
+	font-size: 2rem;
+}
+.contact-btn:hover {
+  background: #fff;
+  color: #555;
+}
+/*
 .contact {
 	width: 1000px;
 	margin: 0 auto;
@@ -88,24 +119,33 @@ body{
 .contact-btn i{
 	margin-left: 10px;
 }
+*/
 
 /*mainview*/
 .mainview {
+	width:100%;
 	clear:both;
+	position: relative;
 }
 
 .mainview_mob {
 	display: none;
+
+}
+.mainview img{
+	width:100%;
+
 }
 
 /*現状*/
 .circumstance {
-	width: 1000px;
+	width: 100%;
 	text-align:center;
 	margin: 50px auto 0;
 }
 
 .circumstance-title h2 {
+	width:100%;
 	font-size: 3rem;
 	color: #fff;
 	background: -webkit-gradient(linear, left top, right bottom, from(#2980b9), color-stop(0.25, #2980b9), color-stop(0.25, #3498db), color-stop(0.5, #3498db), color-stop(0.5, #2980b9), color-stop(0.75,                #ddd), color-stop(0.75, #3498db), to(#3498db));
@@ -165,7 +205,7 @@ body{
 	font-size:1.2rem;
 	font-weight:normal;
 	}
-	
+
 .shikaku {
 	background-color: #d35400;
 	color: #fff;
@@ -175,7 +215,7 @@ body{
 	font-size: 2rem;
 	line-height: 2.5rem;
 }
- 
+
 
 .sankaku{
 	width: 0;
@@ -190,7 +230,7 @@ body{
 }
 
 .circumstance-coment p{
-	font-size: 2rem;	
+	font-size: 2rem;
 	border: 4px solid #bdc3c7;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -213,18 +253,20 @@ body{
 
 /*仕様*/
 .specification {
+	width:100%;
 	background-color: #E7FEFD;
 	padding-top: 35px;
 	padding-bottom: 45px;
 }
 
 .specification-wrapper {
-	width: 1000px;
+	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 }
 
 .specification-title {
+	width:98%;
 	font-size: 4rem;
 	border: 5px solid #2ecc71;
 	background-color: #fff;
@@ -240,11 +282,11 @@ body{
 
 .spec-wrapper {
 	display:table;
-	width: 1000px;
+	width: 95%;
 	margin: 15px auto 0;
 	table-layout: fixed;
 	background-color: #fff;
-	padding: 20px;
+	padding: 3%;
 	border-radius: 50px;
 	box-shadow: 2px 2px 5px #9F9F9F;
     -webkit-box-shadow: 2px 2px 5px #9F9F9F;
@@ -254,13 +296,14 @@ body{
 }
 
 .spec-box {
+	width:30%;
 	display: table-cell;
 }
 
 
 .spec-title {
 	color: #f39c12;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	border-bottom: 2px dotted #f39c12;
 	text-align: center;
@@ -270,6 +313,12 @@ body{
 	color:#34495e;
 }
 
+.spec-img{
+	width:100%;
+}
+.spec-img img{
+	width:100%;
+}
 .font3{
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -311,9 +360,9 @@ body{
 
 /*サービス*/
 .service {
+	width:100%;
 	margin-top: 40px;
 	margin-bottom: 0px;
-	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -324,6 +373,7 @@ body{
 }
 
 .service-title {
+	width:100%;
 	font-size: 4rem;
 	border: 5px solid #2ecc71;
 	background-color: #fff;
@@ -359,7 +409,7 @@ body{
 	width: 100px;
 	height: 100px;
 	display:table-cell;
-	background-color: #2980b9;	
+	background-color: #2980b9;
 	border-radius: 50%;
 }
 
@@ -380,16 +430,16 @@ body{
 	color: #2980b9;
 	font-weight: bold;
 	padding: 0px 10px ;
-	
+
 }
 
 .hide {
 	display:none;
 	}
-	
+
 /*レポート*/
 .report-img {
-	width: 1000px;
+	width:100%;
 	margin: 0 auto;
 }
 
@@ -400,7 +450,7 @@ body{
 
 /*料金ボタン*/
 .price-btn {
-	width: 1000px;
+	width:100%;
 	margin: 0 auto;
 }
 
@@ -444,7 +494,7 @@ body{
 
 /*コンタクト*/
 .contact-btn3 {
-	width: 1000px;
+	width:100%;
 	margin: 0px auto 40px;
 }
 
@@ -488,13 +538,14 @@ body{
 
 /* 豆知識 */
 .trivia {
+	width:100%;
 	background-color: #FDF2DD;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .trivia-wrapper {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: #fff;
 	border: 7px solid #f39c12;
@@ -535,7 +586,7 @@ body{
                0 3px 0 #8F8F8F,
                0 4px 0 #7E7E7E;
 }
-	
+
 
 .trivia-img {
 	float: right;
@@ -544,7 +595,7 @@ body{
 }
 
 .trivia-discription p{
-	text-align: center; 
+	text-align: center;
 	background-color: #f39c12;
 	padding: 5px;
 	color: #fff;
@@ -554,7 +605,7 @@ body{
 /* 豆知識 (表)*/
 table   { width: 100%; }
 section th, section td  { padding: 10px; border: 1px solid #ddd; }
-section th  { background: #E4FBFA; 
+section th  { background: #E4FBFA;
 			  font-size: 1.5rem;
 			}
 .compare th, .compare td  { width: 10%; text-align: left; }
@@ -570,8 +621,8 @@ section th  { background: #E4FBFA;
 }
 
 /*メディア*/
-.media { 
-        width: 1000px;
+.media {
+        width: 100%;
 		margin: 0 auto;;
 		padding: 20px 0 0px
 }
@@ -646,14 +697,14 @@ section th  { background: #E4FBFA;
 }
 
 /*お客様の声*/
-.customer { 
+.customer {
 	background-color: #E7FEFD;
 	margin-top:-30px;
 	padding-bottom: 20px;
 }
 
 .customer-wrapper {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 20px;
 }
@@ -713,7 +764,7 @@ section th  { background: #E4FBFA;
 
 /*料金*/
 #price {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 20px 0 0;
 }
@@ -832,7 +883,7 @@ section th  { background: #E4FBFA;
 	padding-bottom: 5px
 }
 .footer-logo {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	margin-top:10px
@@ -843,7 +894,7 @@ section th  { background: #E4FBFA;
 }
 
 .copyright {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -878,643 +929,5 @@ section th  { background: #E4FBFA;
 #pageTop a:hover {
   text-decoration: none;
   opacity: 0.7;
-}
-	
-	
-
-
-/* #############################################################769pxから970px###################################################################### */
-@media (min-width: 769px) and (max-width: 1025px){
-	.site-title p {
-	width: 40%;
-	float: left
-}
-
-.contact {
-	width: 100%;
-	margin: 0 auto;
-}
-   .contact-btn {
-	width: 40%;
-	margin-top: 25px;
-	font-size: 17px;
-	padding: 20px 10px 20px 10px;
-}
-
-.mainview p img{
-	width: 100%;
-}
-
-.circumstance {
-	width: 100%;
-}
-
-/*仕様*/
-.specification-wrapper {
-	width: 95%
-}
-
-.spec-wrapper {
-	width: 95%
-}
-
-.spec-img img{
-	width: 100%;
-}
-
-/*サービス*/
-.service {
-	width: 100%;
-}
-
-.service-wrapper {
-	width: 95%;
-	margin: 0 auto;
-}
-
-.service-box-wrapper {
-	width:95%;
-	margin-bottom: 30px;
-}
-
-.service-list {
-	width: 90px;
-	height: 90px;
-}
-
-.service-list h2 {
-	font-size: 1.5rem;
-}
-
-
-.font4 { 
-	font-size: 1.7rem;
-}
-
-/*レポート*/
-.report-img {
-	width: 100%;
-	margin-top: -10px;
-}
-
-.price-btn {
-	width: 100%;
-}
-
-.contact-btn3 {
-	width: 100%;
-}
-
-/*豆知識*/
-.trivia-wrapper {
-	width: 95%;
-}
-
-.trivia-box{
-	width: 100%;
-}
-
-.trivia-title  {
-	height: auto;
-	width: 100%;
-	float:none;
-	display: block;
-	text-align: center
-}
-
-.trivia-title i {
-	margin-top: 20px;
-}
-
-.trivia-img {
-	width: 100%;
-	margin-top: 20px;
-	display:block;
-}
-.trivia-img img{
-	width: 100%;
-}
-
-/*メディア*/
-.media { 
-        width: 90%;
-}
-
-/*お客様の声*/
-
-.customer {
-	width: 100%;
-}
-.customer-wrapper {
-	width: 95%;
-}
-
-.comments-wrapper {
-	width: 100%;
-	padding: 0px 30px;
-	margin: -20px auto 20px;
-}
-
-/*料金*/
-#price {
-	width: 100%
-}
-.price-title {
-	width: 95%;
-	margin: 0 auto;
-}
-
-.price-info {
-	width: 95%;
-	margin: -20px auto 0px;
-}
-
-.price-point p {
-	font-size: 3rem;
- 	line-height: 4rem;
-}
-
-.price-table {
-	margin: 20px auto 0;
-}
-
-/*　フッター */
-.footer{
-	width:100%;
-}
-.footer-logo {
-	width: 100%;
-}
-
-.copyright {
-	width: 100%;
-}
-
-/* topへ戻る */
-#pageTop a {
-  padding: 8px 0 4px;
-  width: 90px;
-  height: 40px;
-  font-size: 2rem;
-}
-
-}
-
-/* ############################################################スマートフォン・タブレット対応############################################################ */
-@media (max-width: 768px){
-.site-title {
-	width: 100%;
-}
-.site-title-sub p {
-	color: #fff;
-	padding-top: 7px;
-	padding: 5px;
-	font-size: 1.2rem;
-	font-weight: normal;
-	width: 100%;
-	margin: 0 auto;
-	position: relative; /* Fix for absolute positioning */
-}
-
-.site-title p {
-	width: 100%;
-	float: none;
-	margin-top: 5px;
-}
-
-.site-title p img {
-	width:100%;
-	height: auto;
-}
-
-
-.contact {
-	width:100%;
-}
-.contact-btn {
-  width: 100%;
-  margin-top: -15px;
-  font-size: 18px;
-  padding: 10px 10px 10px 10px;
-}
-
-.mainview p img {
-	margin-top: 5px;
-}
-
-
-/*mainview*/
-
-.mainview img {
-	clear: both;
-	margin-top:5px;
-}
-
-.mainview-img img{
-	display: none;
-}
-
-.slideshow {
-	display: none;
-}
-
-/* 現状 */
-.circumstance {
-	width: 100%;
-	margin-top: 10px;
-}
-
-.circumstance-title h2 {
-	font-size: 2.5rem;
-	margin-bottom: 25px;
-	padding: 5px 0;
-}
-
-
-.circumstance-wrapper, .circumstance-box {
-	display: block;
-}
-
-.circumstance-wrapper {
-	margin-top: -5px;
-}
-
-.circumstance-box p {
-	margin: 0px 10px 0px 10px;
-	font-size: 1.7rem;
-	line-height: 2.2rem;
-	color: #fff;
-	background: #f39c12;
-    dispay: inline-block;
-    position: relative;
-}
-
-.shikaku {
-	font-size: 1.7rem;
-	line-height: 2rem;
-	width: 220px
-}
-
-.sankaku{
-	border: 150px solid transparent;
-	border-top: 50px solid #d35400;
-	margin: 0 auto;
-}
-
-.circumstance-coment{
-	margin-top: -135px;
-}
-
-.circumstance-coment p{
-	font-size: 1.3rem;	
-	line-height: 2.3rem;
-}
-
-.circumstance-coment p .font2{
-    font-size: 2rem;
-	background-color: #F9F802;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-/*仕様*/
-.specification-wrapper {
-	width: 95%;
-}
-
-.specification-title {
-	font-size: 2.5rem;
-}
-
-.spec-wrapper {
-	width: 95%;
-	border-spacing: 0px;
-}
-
-.specs-wrapper, .spec-box {
-	display: block;
-}
-.spec-title {
-	font-size: 1.8rem;
-}
-
-.spec-text {
-	font-size: 1.4rem;
-}
-
-.spec-img img{
-	width: 100%;
-}
-
-.contact-2 .contact-btn-2  {
-	font-size: 1.3rem;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-/*サービス*/
-.service {
-	width: 100%;
-}
-
-.service-wrapper {
-	width: 100%;
-}
-
-.service-title {
-	font-size: 1.8rem;
-}
-
-
-service-box {
-	width: 100%;
-	display: block;
-	padding: 0px;
-}
-
- .service-list {
-	width: 95%;
-	height: auto;
-	margin: 0 auto;
-	display:block;
-	background-color: #2C73D1;	
-	border-radius: 10px;
-	padding: 10px;
-}
-
-.service-list h2 {
-	font-size: 1.5rem;
-	margin-top : 0px;
-	margin-bottom: 0px;
-}
-
-.service-info {
-	padding-left: 0px;
-	text-align: center;
-}
-
-
-
-.font4 { 
-	font-size: 1.3rem;
-	padding: 0px 5px;
-}
-
-.service-box-wrapper {
-	width:95%;
-	margin-bottom: 30px;
-	padding-bottom: 0px;
-}
-
-.font4 { 
-	font-size: 1.7rem;
-}
-
-
-/*レポート*/
-.report-img {
-	width: 100%;
-	margin-top: -10px;
-}
-
-/*料金ボタン*/
-.price-btn {
-	width: 100%;
-}
-
-.price-btn-1 {
-	font-size: 1.5rem;
-}
-
-.btn3 {
-	width:100%;
-}
-
-.contact-btn3 {
-	width: 100%;
-}
-
-.contact-btn-3-2 {
-	font-size: 1.5rem;
-}
-
-/*豆知識*/
-.trivia-wrapper {
-	width: 95%;
-}
-
-.trivia-box{
-	width: 100%;
-}
-
-.trivia-title  {
-	height: auto;
-	width: 100%;
-	float:none;
-	display: block;
-	text-align: center
-}
-
-.trivia-title p{
-	font-size: 2rem;
-	line-height: 2.7rem;
-}
-.trivia-title i {
-	display: none;
-}
-
-.trivia-img {
-	width: 100%;
-	margin-top: 20px;
-	display:block;
-}
-.trivia-img img{
-	width: 100%;
-}
-
-.trivia-discription p {
-	font-size:1.2rem;
-}
-
-    .compare tr {
-        display:block;
-        margin-bottom: 0px;
-    }
-    .compare th {
-        display:block;
-        width: 100%;
-    }
-    .compare td {
-        display: list-item;
-        width: 90%;
-        margin-left: 10%;
-        border:none;
-		font-size: 1.3rem;
-    }
-	
-/*メディア*/
-.media {
-	margin-bottom: 15px;
-}
-.media-title {
-	width: 100%;
-	margin:0 auto;
-}
-.media-title p {
-	font-size: 1.8rem;
-}
-.media { 
-        width: 90%;
-}
-.imageAll {
-	clear: both;
-	padding: 8px 8px 20px 8px;
-	overflow: hidden;
-	font-size: 0px;
-}
-.imageBox_unit {
-	* IE 6/7 */
-	/display: inline;
-	/zoom: 1;
-	width: 22%;
-	margin: 0 4% 4% 0;
-	display: inline-block;
-}
-.imageBox_last {
-	* IE 6/7 */
-	/display: inline;
-	/zoom: 1;
-	width: 22%;
-	margin: 0 0 4% 0;
-	display: inline-block;
-}
-.box_left {
-	width:49%;
-	margin-right: 2%;
-}
-.box_right {
-	width:49%;
-	margin-right: 0%;
-}
-.title {
-	margin-top: 5px;
-	margin-bottom: 8px;
-	float: left;
-	font-size: 14px;
-	color: #000000;
-	text-align: center;
-}
-
-.image img {
-	max-width: 100%;
-	height: auto;
-	width /***/: auto;
-	width: auto;
-	border: none;
-}
-
-/*お客様の声*/
-.customer-wrapper {
-	width: 95%;
-}
-
-.customer-title p{
-	font-size: 1.8rem;
-	margin-top: 15px;
-}
-.font8 {
-	font-size: 1.5rem;
-}
-
-.comments-wrapper {
-	width: 90%;
-	height: 300px;
-	padding: 0px 30px;
-	margin: 20px auto 20px;
-}
-
-/*料金*/
-#price {
-	width: 90%;
-	margin: 0 auto;
-}
-
-.price-title {
-	width: 95%;
-	margin: 0 auto;
-}
-
-.price-title p {
-	font-size: 1.8rem;
-}
-
-.price-info {
-	display: block;
-	margin-top: 40px;
-	margin-bottom : 20px;
-	width: 100%;
-	padding-left: 0%;
-}
-
-.price-text-box {
-	display: block;
-	width: 100%;
-}
-
-.Price-text {
-	width: 100%;
-	height: 125px;
-	margin: -20px 0px  -10px;
-}
-
-.Price-text p {
-	width: 100%;
-	font-size: 1.7rem;
-}
-.font10 {
-	font-size: 4rem;
-}
-
-.price-point{
-	font-size: 3rem;
-	line-height: 4rem;
-	margin-top: 40px;
-}
-.price-table {
-	display: block;
-}
-
-.price-first {
-	border-right: none;
-	border-bottom: 5px dotted #2ECF09;
-	width: 100%;
-	display: block;
-}
-
-.price-note p {
-	font-size: 1rem;
-}
-
-/*　フッター */
-.footer{
-	width:100%;
-}
-.footer-logo {
-	width: 100%;
-}
-.footer-logo img {
-	width: 60%;
-}
-
-.copyright {
-	width: 100%;
-}
-
-/* topへ戻る */
-#pageTop a {
-  padding: 8px 0 4px;
-  width: 50px;
-  height: 40px;
-  font-size: 2rem;
 }
 }

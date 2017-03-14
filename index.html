@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
 <title>攻撃遮断くん</title>
-<link href="style.css" rel="stylesheet" type="text/css">
+<!--変更点１-->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="sp.css" >
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="photoswipe.css" />
- 
+
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="jquery.bxslider.min.js"></script>
@@ -22,7 +25,7 @@
 				speed: 500,
             });
         });
-		
+
 		$(function() {
     $(window).setBreakpoints({
         distinct: true,
@@ -100,7 +103,7 @@ $(function(){
 var topBtn=$('#pageTop');
 topBtn.hide();
 
- 
+
 
 //◇ボタンの表示設定
 $(window).scroll(function(){
@@ -117,7 +120,7 @@ $(window).scroll(function(){
   }
 });
 
- 
+
 
 // ◇ボタンをクリックしたら、スクロールして上に戻る
 topBtn.click(function(){
@@ -137,28 +140,36 @@ topBtn.click(function(){
 </head>
 
 <body>
+  <div id="wrapper">
 <header class="header">
+  <div class=block_01>
 	<div class="site-title-sub">
     	<p>あらゆるサイバー攻撃から守り、安心、安全なセキュリティ運用を提供するサービスです。</p>
     </div>
-    
+
     <div class="site-title">
     	<p><img src="img/logo_k.jpg" alt=""></p>
     </div>
-    
-    <div class="contact">
-    <a class="contact-btn" href="mail/mail.html">
-    お申し込み・資料請求はコチラ<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-    </div>
-</header>    
-<section class="mainview"> 
+  </div>
+
+</header>
+<section class="mainview">
+  <img src="img/20170312_03.jpg">
+  <div class="contact">
+  <a class="contact-btn" href="mail/mail.html">
+  お申し込み・資料請求はコチラ<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+  </div>
+</section>
+<!--
+<section class="mainview">
    <div style="position: relative;">
-   <img src="img/image-pc.jpg" class="sp-img" width="100%" height="auto" alt="mainview"><br>
+   <img src="img/20170312_03.jpg" class="sp-img" width="100%" height="auto" alt="mainview"><br>
    <div style="position: absolute; top: 15px; right: 30px; width: 50%;">
    <div class="mainview-img">
       <img src="img/title.png" width="100%" height="auto" alt="mainview">
    </div>
    </div>
+
    <div class="slideshow">
    <div style="position: absolute; bottom: -20px; right: 50px; width: 45%;">
    <ul class="bxslider">
@@ -167,42 +178,43 @@ topBtn.click(function(){
      <li><img title="水滴" alt="" src="img/slideshow_3.jpg" width="100%" height="auto"/></li>
    </ul>
    </div>
-   </div>
+ </div>
+
    </div>
 </section>
-
+-->
 <section class="circumstance">
   	<div class="circumstance-title">
     	<h2>今の現状を知っていますか？</h2>
     </div>
-    
+
 <div class="circumstance-wrapper">
 	<div class="circumstance-box">
     <p>政府機関・国内企業の<br>サーバー攻撃</p>
     <div class="circumstance-info">128億円<br><span class="font">※2013年</span></div>
     </div>
-    
+
     <div class="circumstance-box">
     <p>1社あたりの攻撃件数<br>月平均</p>
     <div class="circumstance-info">300件<br><span class="font">※当社調べ／100名以下の企業のみ</span></div>
     </div>
-    
+
     <div class="circumstance-box">
     <p>不正送金被害<br>過去最高</p>
     <div class="circumstance-info">18億円<br><span class="font">※2014年上半期オンラインバンキング</span></div>
     </div>
     </div>
-    
+
     <div class="shikaku">
     	さらなる被害が<br>でないために…
     </div>
-    
+
     <div class="sankaku"></div>
-    
+
     <div class="circumstance-coment">
     	<p>この現状の中あなたの会社が被害に遭う前に、<br>自主的なセキュリティーが必要なのです。<br>
-           当社の<span class="font2">攻撃遮断くん</span>は、保守・運用が一切ありません。<br>サポートもお任せください。</p>  
-    </div> 
+           当社の<span class="font2">攻撃遮断くん</span>は、保守・運用が一切ありません。<br>サポートもお任せください。</p>
+    </div>
 </section>
 
 
@@ -214,7 +226,7 @@ topBtn.click(function(){
         攻撃遮断くんの仕様
         </div>
     </div>
-    
+
 <div class="spec-wrapper">
 	<div class="spec-cell">
 	<div class="spec-box">
@@ -223,7 +235,7 @@ topBtn.click(function(){
     サーバセキュリティタイプの攻撃遮断くんは、外部公開サーバへのあらゆるウイルスやサイバー攻撃を遮断し、安心・安全運用を可能にするクラウド型IPS+WAFのサーバセキュリティです。
     </p>
     </div>
-    
+
     <div class="spec-box">
     <div class="spec-title">ほぼすべての企業で導入可能</div>
     <p class="spec-text">
@@ -231,7 +243,7 @@ topBtn.click(function(){
     ネットワーク、OS、WEBアプリケーションへのサイバー攻撃を防御。
     </p>
     </div>
-    
+
     <div class="spec-box">
     <div class="spec-title">低価格・高セキュリティー</div>
     <p class="spec-text">
@@ -239,16 +251,16 @@ topBtn.click(function(){
     </p>
     </div>
     </div>
-        
+
     <div class="spec-img">
     	<img src="img/siyou-pc.jpg" class="sp-img" alt="仕様">
     </div>
-    
+
     <div class="contact-2">
     <a class="contact-btn-2" href="mail/mail.html">
     お申し込み・資料請求はコチラ<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
     </div>
-    
+
 </div>
 </section>
 
@@ -258,46 +270,46 @@ topBtn.click(function(){
         サービスの内容
         </div>
     </div>
-    
+
 <div class="service-box-wrapper">
     <div class="service-box">
         	<div class="service-list"><h2>その1</h2></div>
             <div class="service-info"><p><span class="font4">専門的な技術者がいなくても大丈夫!</span><br>システムの保守・運用作業はすべて弊社が行います。</p></div>
     </div>
-       
+
      <div class="service-box">
         	<div class="service-list"><h2>その２</h2></div>
             <div class="service-info"><p><span class="font4">専用ハードウェア、サーバーの停止、ネットワーク構成の変更なし！</span></p></div>
-    </div>   
-    
+    </div>
+
     <div class="service-box">
         	<div class="service-list"><h2>その3</h2></div>
             <div class="service-info"><p><span class="font4">ほぼすべてのOSに対応!</span></p></div>
     </div>
-    
-    <div class="service-box">    
+
+    <div class="service-box">
         	<div class="service-list"><h2>その4</h2></div>
             <div class="service-info"><p><span class="font4">サーバーへの負担はたったの1%!</span><br>サーバーやサービス性能への影響はほとんどありません。</p></div>
    </div>
-   
-   <div class="service-box">     
+
+   <div class="service-box">
         	<div class="service-list"><h2>その5</h2></div>
             <div class="service-info"><p><span class="font4">５営業日でサービス開始可能!</span><br>ご担当様の手を煩わせません。</p></div>
   </div>
-  
-  <div class="service-box">      
+
+  <div class="service-box">
         	<div class="service-list"><h2>その6</h2></div>
             <div class="service-info"><p><span class="font4">シグネチャを自動で最新アップデート!</span></p></div>
-  </div>   
-  
-  <div class="service-box">     
+  </div>
+
+  <div class="service-box">
         	<div class="service-list"><h2>その7</h2></div>
             <div class="service-info"><p><span class="font4">障害発生時でもお客様のサービスに影響ありません!</span></p></div>
   </div>
 </div>
 
 <div class="report-img">
-    	<img src="img/report-pc.jpg" class="sp-img" alt="レポート">	
+    	<img src="img/report-pc.jpg" class="sp-img" alt="レポート">
     </div>
 
 </section>
@@ -314,23 +326,23 @@ topBtn.click(function(){
         <a class="contact-btn-3-2" href="mail/mail.html">
         お申し込み・資料請求はコチラ<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
     </div>
-</section> 
+</section>
 
 
 
 <section class="trivia">
-	<div class="trivia-wrapper clearfix">
+	<div class="trivia-wrapper_01">
     	<div class="trivia-box">
             <div class="trivia-title">
            		<i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
 		   		<p>ここでちょっと<br>まめ知識</p>
         	</div>
-        
+
             <div class="trivia-img">
             	<img src="img/trivia.jpg" class="sp-img" alt="仕様">
             </div>
         </div>
-    
+
         <div class="trivia-discription">
             <p>攻撃遮断くんとホスト型、ネットワーク型の違いを見てみましょう。</p>
         </div>
@@ -375,7 +387,7 @@ topBtn.click(function(){
         ※ネットワーク型・ホスト型(IPS・WAF)については、各サービスにより仕様が異なりますので、必ずしもこれに一致する訳ではありません。
         </p>
     </div>
-</div>    
+</div>
 </section>
 
 <section class="media">
@@ -383,55 +395,55 @@ topBtn.click(function(){
     	<div class="media-title">
         	<p>メディア掲載</p>
         </div>
-        
+
         <div class="media-gallery">
         	<div class="imageAll">
-	
+
                 <div class="imageBox_unit box_left">
                     <p class="image"><a href="http://itnp.net/story/991"><img src="img/media1-thumnail.jpg" alt="" /></a></p>
                     <p class="title">東京IT新聞<br><span class="font7">2014年10月31日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_right">
                     <p class="image"><a href="http://news.infoseek.co.jp/article/itlifehack_6120"><img src="img/media2-thumnail.jpg" alt="" /></a></p>
                     <p class="title">Infoseek<br><span class="font7">2014年10月30日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_left">
                     <p class="image"><a href="http://itlifehack.jp/archives/6120"><img src="img/media3-thumnail.jpg" alt="" /></a></p>
                     <p class="title">ITライフハック<br><span class="font7">2014年10月30日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_last box_right">
                     <p class="image"><a href="http://www.kyodo.co.jp/yawaosi-eizo/2014-10-22_1078916/"><img src="img/media4-thumnail.jpg" alt="" /></a></p>
                     <p class="title">KK KYODO SITE<br><span class="font7">2014年10月29日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_left">
                     <p class="image"><a href="http://www.security-next.com/053013"><img src="img/media5-thumnail.jpg" alt="" /></a></p>
                     <p class="title">Security NEXT<br><span class="font7">2014年10月22日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_right">
                     <p class="image"><a href="http://headlines.yahoo.co.jp/hl?a=20141021-00000031-rbb-sci"><img src="img/media6-thumnail.jpg" alt="" /></a></p>
                    <p class="title">YAHOO! ニュース<br><span class="font7">2014年10月21日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_left">
                     <p class="image"><a href="http://www.rbbtoday.com/article/2014/10/21/124663.html"><img src="img/media7-thumnail.jpg" alt="" /></a></p>
                     <p class="title">RBB TODAY<br><span class="font7">2014年10月21日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_last box_right">
                     <p class="image"><a href="img/media8.jpg" class="swipe" rel="group1"><img src="img/media8-thumnail.jpg" alt="" /></a></p>
                     <p class="title">日経産業新聞<br><span class="font7">2014年5月2日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_left">
                     <p class="image"><a href="img/media9.jpg" class="swipe" rel="group1"><img src="img/media9-thumnail.jpg" alt="" /></a></p>
                     <p class="title">日経産業新聞<br><span class="font7">2013年12月18日</span></p>
                 <!--/imageBox_unit--></div>
-                
+
                 <div class="imageBox_unit box_right">
                     <p class="image"><a href="http://itpro.nikkeibp.co.jp/article/NEWS/20131213/524747/?ST=security&P=1"><img src="img/media10-thumnail.jpg" alt="" /></a></p>
                     <p class="title">日経BP社　ITPRO<br><span class="font7">2013年12月13日</span></p>
@@ -447,7 +459,7 @@ topBtn.click(function(){
     	<div class="customer-title">
         	<p>企業様の声<span class="font8">《一部抜粋》</span></p>
         </div>
-        
+
         <div class="comments-wrapper">
         <div class="comments-box">
         	<div class="comments-text">
@@ -457,14 +469,14 @@ topBtn.click(function(){
                 エージェントをインストールするだけでいいんですよ。そうお聞きして、これは従来のIPSと違う、新しい時代の製品だな、と思いました。他に調べても他にそういうサービスがありません
                 でした。これからこういうものが流行っていくんだな、と非常に感激しました。 </p>
             </div>
-            
+
             <div class="comments-text">
                 <h2>攻撃遮断くんを選んで頂いた理由は何でしょうか？</h2>
                 <h3>株式会社Ｙ社様</h3>
                 <p>まず目を惹いたのは<span class="font9">価格</span>です。他社が簡単に100万超えの価格を提示してくる中では破格の安さでした。それからサーバーCPU負荷がゼロに近いこと、
                 メンテナンスを自分でしなくていいことも理由ですね。</p>
             </div>
-            
+
             <div class="comments-text">
                 <h2>攻撃遮断くんを導入して良かった点をお聞かせください。</h2>
                 <h3>株式会社N社様</h3>
@@ -473,7 +485,7 @@ topBtn.click(function(){
 				で稼動させることが何よりも大事なんです。</span><br>なので、自動シグネチャ更新でいつも最新の脅威に対応できる点は、「攻撃遮断くん」を選んで特によかったと感じることの一つです。
 				<br>それから、サーバCPUへの負荷が小さい点も。要は私達の求めるものが過不足なくサービスとして実現されているということなので、これ以上の改善点が思いつかないくらいですね（笑）。</p>
             </div>
-            
+
             <div class="comments-text">
                 <h2>サービス導入のきっかけをお聞かせください。</h2>
                 <h3>R株式会社様</h3>
@@ -485,7 +497,7 @@ topBtn.click(function(){
             </div>
         </div>
         </div>
-    
+
     </div>
 </section>
 
@@ -493,43 +505,43 @@ topBtn.click(function(){
 	<div class="price-title">
     	<p>ご利用料金</p>
     </div>
-    
+
     <div class="price-info">
-    
-    	<div class="price-text-box">	
+
+    	<div class="price-text-box">
         <div class="Price-text">
         <p>今なら初月利用料<br><span class="font10">無料!!!</span></p>
         </div>
         </div>
-        
+
         <div class="price-point-box">
         <div class="price-point">
           <p>低価格!!<br>
             高セキュリティ!!</p>
         </div>
         </div>
-        
+
     </div>
-    
+
     <div class="price-table">
-    
+
     <div class="price-first">
     <div class="price-detail">
     	<p><span class="font11">初期設定費用</span><br>¥10,000<span class="font12">（税抜）</span></p>
     </div>
     </div>
-   
+
     <div class="price-monthry">
     <div class="price-detail">
     <p><span class="font11">月額利用費用</span><br>¥40,000<span class="font12">（税抜）</span></p>
     </div>
     </div>
    </div>
-    
+
     <div class="price-note">
     <p>課金単位:1グローバルIP<br>※サーバーから見てOUT側の通信で使用されるグローバルIP毎上記は全てのサービス内容を含んだ金額です。<br>IP数によりボリュームディスカウントが適用されます。<br>上記価格に消費税は含まれておりません。</p>
     </div>
-    
+
 </section>
 
 <section class="contact-btn3">
@@ -545,8 +557,6 @@ topBtn.click(function(){
 </footer>
 
 <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"> </i></a></p>
-
+</div>
 </body>
 </html>
-
-    
