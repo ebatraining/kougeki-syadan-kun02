@@ -34,10 +34,13 @@ body{
 }
 
 .site-title-sub p {
+	color: rgba(11, 19, 13, 0.61);
 	width:90%;
 	height:auto;
-	font-size: 2rem;
+	font-size: 1.9rem;
 	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
 	position: relative; /* Fix for absolute positioning */
 }
 
@@ -45,7 +48,8 @@ body{
 	float:left;
 	width:40%;
 	margin-left: 4%;
-	margin-top: 5%;
+	margin-top: 0%;
+	margin-bottom: 0;
 }
 
 .site-title p {
@@ -75,7 +79,7 @@ body{
 	text-decoration: none;
 	line-height: 1;
 	transition: .3s;
-	font-size: 0.8rem;
+	font-size: 2rem;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #000;
 }
@@ -883,7 +887,6 @@ section th  { background: #E4FBFA;
 /*　フッター */
 .footer{
 	width:100%;
-	background-color: #95a5a6;
 	margin-top: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px
@@ -896,18 +899,20 @@ section th  { background: #E4FBFA;
 }
 
 .footer-logo img {
-	width:20%;
+	width:30%;
 }
 
 .copyright {
-	width: 100%;
+	background-color: #95a5a6;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
+	padding: 2% 5%;
 }
 
 .copyright p {
 	font-size: 1.2rem;
-	line-height: 1.6rem;
+	line-height: 1.3rem;
 	font-weight: bold;
 	color: #4A4A4A;
 }

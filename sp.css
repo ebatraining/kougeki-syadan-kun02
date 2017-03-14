@@ -21,6 +21,7 @@
 		width: 100%;
 		float: none;
 		margin-top: 5px;
+		margin-bottom: 0%;
 	}
 
 	.site-title p img {
@@ -37,7 +38,7 @@
 	.contact-btn{
 	  display: inline-block;
 	  width: 70%;
-	  margin: 5%;
+	  margin: 3%;
 	  padding: 2% 3%;
 	  border: 2px solid #fff;
 	  background: transparent;
@@ -46,7 +47,7 @@
 	  text-decoration: none;
 	  line-height: 1;
 	  transition: .3s;
-		font-size: 0.8rem;
+		font-size: 0.5rem;
 		font-weight: bold;
 		text-shadow: 1px 1px 1px #000;
 	}
@@ -836,7 +837,6 @@
 	/*　フッター */
 	.footer{
 		width:100%;
-		background-color: #95a5a6;
 		margin-top: 20px;
 		padding-top: 5px;
 		padding-bottom: 5px
@@ -849,18 +849,20 @@
 	}
 
 	.footer-logo img {
-		width:20%;
+		width:30%;
 	}
 
 	.copyright {
-		width: 100%;
+		background-color: #95a5a6;
+		width: 90%;
 		margin: 0 auto;
 		text-align: center;
+		padding: 2% 5%;
 	}
 
 	.copyright p {
 		font-size: 0.5rem;
-		line-height: 1rem;
+		line-height: 0.8rem;
 		font-weight: bold;
 		color: #4A4A4A;
 	}
