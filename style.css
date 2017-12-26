@@ -326,8 +326,20 @@ body{
 	width:100%;
 }
 .spec-img img{
-	width:100%;
+	width:92%;
+	margin: 0 auto;
+	padding-bottom: 5%;
 }
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
 .font3{
 	font-weight: bold;
 	font-size: 1.5rem;
@@ -396,16 +408,24 @@ body{
     -moz-box-shadow: 2px 2px 5px #9F9F9F;
 }
 
-.service-box-wrapper{
-	width: 100%;
+img.pc{
+	width: 95%;
 	margin: 0 auto;
-	background-color: #DCDCDC;
+	padding: 5%;
+
+}
+
+.service-box-wrapper{
+	width: 87%;
+	margin: 0 auto;
+	/*background-color: #DCDCDC;*/
 	background-size:20px 20px;
 	background-image:radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.3) 10px,transparent 10px,transparent);
 	border-radius: 30px;
 	padding: 20px;
 	margin-top:20px;
 	margin-bottom: 20px;
+	overflow: hidden;/*たした*/
 }
 
 .service-box {
@@ -417,19 +437,26 @@ body{
  .service-list {
 	width: 100px;
 	height: 100px;
-	display:table-cell;
+	float: left;/*たした*/
+	/*display:table-cell;
 	background-color: #2980b9;
-	border-radius: 50%;
+	border-radius: 50%;*/
 }
+/*たした*/
+.service-list img{
+	width: 100%;
 
-.service-list  h2 {
+}
+/*.service-list  h2 {
 	text-align: center;
 	margin-top: 35%;
 	color: #fff;
-}
+}*/
 
 .service-info {
 	padding-left: 30px;
+	float: right;/*たした*/
+	width: 100%;
 }
 
 
