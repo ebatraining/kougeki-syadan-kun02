@@ -262,7 +262,6 @@
 .sp { display: block !important; }
 }
 
-
 	.font3{
 		font-weight: bold;
 		font-size: 1.2rem;
@@ -376,7 +375,6 @@
 
 	.font4 {
 		font-size: 1.3rem;
-		background-color: #F5F779;
 		color: #2980b9;
 		font-weight: bold;
 		padding: 0px 10px ;

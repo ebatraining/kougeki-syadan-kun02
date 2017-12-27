@@ -408,19 +408,47 @@ body{
     -moz-box-shadow: 2px 2px 5px #9F9F9F;
 }
 
-img.pc{
-	width: 95%;
-	margin: 0 auto;
-	padding: 5%;
+.forpc-img{
+	width: 90%;
+	margin-left: 10%;
+}
+
+td{
+	text-align: center;
+}
+
+tr{
+	font-weight:bold;
+	margin: 3em;
+
+}
+
+.icons{
+	width: 90%;
+	border: none;
+	padding-bottom: 5%;
+	padding-top: 5%;
+
+}
+
+
+.icons img{
+	width:85%;
+	padding:5%;
+}
+
+.icons p{
+	text-align: center;
+	height: 4em;
 
 }
 
 .service-box-wrapper{
 	width: 87%;
 	margin: 0 auto;
-	/*background-color: #DCDCDC;*/
+	/*background-image:url("img/background.gif");
 	background-size:20px 20px;
-	background-image:radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.3) 10px,transparent 10px,transparent);
+	background-image:radial-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.3) 10px,transparent 10px,transparent);*/
 	border-radius: 30px;
 	padding: 20px;
 	margin-top:20px;
@@ -458,7 +486,6 @@ img.pc{
 	float: right;/*たした*/
 	width: 100%;
 }
-
 
 .font4 {
 	font-size: 2.5rem;
