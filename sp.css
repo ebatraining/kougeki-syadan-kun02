@@ -386,6 +386,10 @@
 		}
 
 	/*レポート*/
+	.report {
+		position: relative;
+	}
+
 	.report-img {
 		width:100%;
 		margin: 0 auto;
@@ -399,10 +403,10 @@
 		width: 80%;
 		text-align: center;
 		position: absolute;
-		font-size: 2.2vw;
+		font-size: 2.1vw;
 		line-height: 170%;
 		left: 1%;
-		top: 32%;
+		top: 34%;
 	}
 
 	.report-deco {
