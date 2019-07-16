@@ -395,6 +395,21 @@
 		width: 100%;
 	}
 
+	.report-text {
+		width: 80%;
+		text-align: center;
+		position: absolute;
+		font-size: 2.2vw;
+		line-height: 170%;
+		left: 1%;
+		top: 32%;
+	}
+
+	.report-deco {
+		font-weight: bold;
+		background-color: yellow;
+	}
+
 
 	/*料金ボタン*/
 	.price-btn {
